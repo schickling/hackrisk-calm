@@ -22,13 +22,6 @@ class InterfaceController: WKInterfaceController {
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
         
-        // Configure interface objects here.
-    }
-
-    override func willActivate() {
-        // This method is called when watch view controller is about to be visible to user
-        super.willActivate()
-        
         stressLevelImage.setImageNamed("level")
         stressLevelImage.startAnimatingWithImagesInRange(
             NSRange(location: 0, length: 150),
@@ -40,6 +33,13 @@ class InterfaceController: WKInterfaceController {
             NSRange(location: 0, length: 610),
             duration: 24.4,
             repeatCount: 0)
+        
+        // Configure interface objects here.
+    }
+
+    override func willActivate() {
+        // This method is called when watch view controller is about to be visible to user
+        super.willActivate()
         
         timer = NSTimer.scheduledTimerWithTimeInterval(2.0, target: self, selector: Selector("fetchData"), userInfo: nil, repeats: true)
     }

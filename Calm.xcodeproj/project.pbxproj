@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		59C199ADF8E4EF52C69C8838 /* Pods_Calm_WatchKit_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD89F6426F64F6A6BAD00D80 /* Pods_Calm_WatchKit_Extension.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		8FAF77FD1B19D61D00D7FFE5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FAF77FC1B19D61D00D7FFE5 /* AppDelegate.swift */; };
 		8FAF77FF1B19D61D00D7FFE5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FAF77FE1B19D61D00D7FFE5 /* ViewController.swift */; };
 		8FAF78021B19D61D00D7FFE5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FAF78001B19D61D00D7FFE5 /* Main.storyboard */; };
@@ -23,10 +24,9 @@
 		8FAF78461B19D6C000D7FFE5 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FAF78451B19D6C000D7FFE5 /* HealthKit.framework */; };
 		8FAF784E1B19DFFB00D7FFE5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8FAF78031B19D61D00D7FFE5 /* Images.xcassets */; };
 		8FAF78511B1A01E600D7FFE5 /* HealthKitHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FAF78501B1A01E600D7FFE5 /* HealthKitHelper.swift */; };
-		8FAF78601B1A0C8E00D7FFE5 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FAF785F1B1A0C8E00D7FFE5 /* SwiftyJSON.framework */; };
-		8FAF78611B1A0C8E00D7FFE5 /* SwiftyJSON.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8FAF785F1B1A0C8E00D7FFE5 /* SwiftyJSON.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		8FAF78631B1A308D00D7FFE5 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FAF78621B1A308D00D7FFE5 /* Constants.swift */; };
 		8FAF78641B1A308D00D7FFE5 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FAF78621B1A308D00D7FFE5 /* Constants.swift */; };
+		C0826435477F513B94D224D9 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5266D0F6164515E34B6D4845 /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,7 +71,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				8FAF78611B1A0C8E00D7FFE5 /* SwiftyJSON.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -79,6 +78,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		181F5FB102534D4E51DA7250 /* Pods-Calm WatchKit Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Calm WatchKit Extension.release.xcconfig"; path = "Pods/Target Support Files/Pods-Calm WatchKit Extension/Pods-Calm WatchKit Extension.release.xcconfig"; sourceTree = "<group>"; };
+		4A52BC5505D0954460C3C07A /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		5266D0F6164515E34B6D4845 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F80732D1B1A775A00BFA44A /* Onboard.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Onboard.framework; path = "Pods/../build/Debug-iphoneos/Pods/Onboard.framework"; sourceTree = "<group>"; };
+		8F80732E1B1A775A00BFA44A /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = "Pods/../build/Debug-iphoneos/Pods-Calm WatchKit Extension/SwiftyJSON.framework"; sourceTree = "<group>"; };
 		8FAF77F71B19D61D00D7FFE5 /* Calm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Calm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FAF77FB1B19D61D00D7FFE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8FAF77FC1B19D61D00D7FFE5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -102,8 +106,10 @@
 		8FAF78451B19D6C000D7FFE5 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 		8FAF78471B19D6C000D7FFE5 /* Calm.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Calm.entitlements; sourceTree = "<group>"; };
 		8FAF78501B1A01E600D7FFE5 /* HealthKitHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HealthKitHelper.swift; sourceTree = "<group>"; };
-		8FAF785F1B1A0C8E00D7FFE5 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
 		8FAF78621B1A308D00D7FFE5 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		96D22ABB7C3C15D01453FAB0 /* Pods-Calm WatchKit Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Calm WatchKit Extension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Calm WatchKit Extension/Pods-Calm WatchKit Extension.debug.xcconfig"; sourceTree = "<group>"; };
+		AD89F6426F64F6A6BAD00D80 /* Pods_Calm_WatchKit_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Calm_WatchKit_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D08E0C1A6F3A6416B2E40337 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,8 +117,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8FAF78601B1A0C8E00D7FFE5 /* SwiftyJSON.framework in Frameworks */,
 				8FAF78461B19D6C000D7FFE5 /* HealthKit.framework in Frameworks */,
+				C0826435477F513B94D224D9 /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -127,6 +133,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				59C199ADF8E4EF52C69C8838 /* Pods_Calm_WatchKit_Extension.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,13 +144,14 @@
 			isa = PBXGroup;
 			children = (
 				8FAF78621B1A308D00D7FFE5 /* Constants.swift */,
-				8FAF785F1B1A0C8E00D7FFE5 /* SwiftyJSON.framework */,
 				8FAF78451B19D6C000D7FFE5 /* HealthKit.framework */,
 				8FAF77F91B19D61D00D7FFE5 /* Calm */,
 				8FAF78211B19D63200D7FFE5 /* Calm WatchKit Extension */,
 				8FAF78311B19D63200D7FFE5 /* Calm WatchKit App */,
 				8FAF77F81B19D61D00D7FFE5 /* Products */,
 				8FAF780F1B19D61D00D7FFE5 /* CalmTests */,
+				FD50AC42CC1F27976811E242 /* Pods */,
+				DA13BFD7C884693A8B5DCA30 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -236,6 +244,28 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		DA13BFD7C884693A8B5DCA30 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8F80732D1B1A775A00BFA44A /* Onboard.framework */,
+				8F80732E1B1A775A00BFA44A /* SwiftyJSON.framework */,
+				5266D0F6164515E34B6D4845 /* Pods.framework */,
+				AD89F6426F64F6A6BAD00D80 /* Pods_Calm_WatchKit_Extension.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FD50AC42CC1F27976811E242 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D08E0C1A6F3A6416B2E40337 /* Pods.debug.xcconfig */,
+				4A52BC5505D0954460C3C07A /* Pods.release.xcconfig */,
+				96D22ABB7C3C15D01453FAB0 /* Pods-Calm WatchKit Extension.debug.xcconfig */,
+				181F5FB102534D4E51DA7250 /* Pods-Calm WatchKit Extension.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -243,11 +273,14 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8FAF78161B19D61E00D7FFE5 /* Build configuration list for PBXNativeTarget "Calm" */;
 			buildPhases = (
+				A41DE318D6D03AD9BEE69510 /* Check Pods Manifest.lock */,
 				8FAF77F31B19D61D00D7FFE5 /* Sources */,
 				8FAF77F41B19D61D00D7FFE5 /* Frameworks */,
 				8FAF77F51B19D61D00D7FFE5 /* Resources */,
 				8FAF78421B19D63200D7FFE5 /* Embed App Extensions */,
 				8FAF785E1B1A0C7E00D7FFE5 /* Embed Frameworks */,
+				300053923C42FEC1E1856ED2 /* Embed Pods Frameworks */,
+				659971B137B030F1B58E91EB /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -281,9 +314,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8FAF783F1B19D63200D7FFE5 /* Build configuration list for PBXNativeTarget "Calm WatchKit Extension" */;
 			buildPhases = (
+				0B48D2417983B321F5CC7B51 /* Check Pods Manifest.lock */,
 				8FAF781C1B19D63200D7FFE5 /* Sources */,
 				8FAF781D1B19D63200D7FFE5 /* Frameworks */,
 				8FAF781E1B19D63200D7FFE5 /* Resources */,
+				4D792276116E9F2868F908C3 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -400,6 +435,84 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0B48D2417983B321F5CC7B51 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		300053923C42FEC1E1856ED2 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4D792276116E9F2868F908C3 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Calm WatchKit Extension/Pods-Calm WatchKit Extension-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		659971B137B030F1B58E91EB /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A41DE318D6D03AD9BEE69510 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8FAF77F31B19D61D00D7FFE5 /* Sources */ = {
@@ -562,12 +675,17 @@
 		};
 		8FAF78171B19D61E00D7FFE5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D08E0C1A6F3A6416B2E40337 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Calm/Calm.entitlements;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/Pods",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/Pods-Calm",
+					WatchKit,
+					Extension,
 				);
 				INFOPLIST_FILE = Calm/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -577,12 +695,17 @@
 		};
 		8FAF78181B19D61E00D7FFE5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4A52BC5505D0954460C3C07A /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Calm/Calm.entitlements;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/Pods",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/Pods-Calm",
+					WatchKit,
+					Extension,
 				);
 				INFOPLIST_FILE = Calm/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -660,6 +783,7 @@
 		};
 		8FAF78401B19D63200D7FFE5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 96D22ABB7C3C15D01453FAB0 /* Pods-Calm WatchKit Extension.debug.xcconfig */;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -678,6 +802,7 @@
 		};
 		8FAF78411B19D63200D7FFE5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 181F5FB102534D4E51DA7250 /* Pods-Calm WatchKit Extension.release.xcconfig */;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",

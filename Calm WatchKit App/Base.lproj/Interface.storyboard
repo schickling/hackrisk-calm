@@ -10,8 +10,8 @@
             <objects>
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Calm_WatchKit_App" customModuleProvider="target">
                     <items>
-                        <imageView alignment="center" id="p57-pF-Us9"/>
                         <imageView alignment="center" id="qXP-dh-IqF"/>
+                        <imageView alignment="center" id="p57-pF-Us9"/>
                     </items>
                     <connections>
                         <outlet property="exerciseImage" destination="qXP-dh-IqF" id="Lar-i1-nCZ"/>
@@ -19,7 +19,7 @@
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="220" y="345"/>
+            <point key="canvasLocation" x="220" y="302.5"/>
         </scene>
         <!--Static Notification Interface Controller-->
         <scene sceneID="AEw-b0-oYE">

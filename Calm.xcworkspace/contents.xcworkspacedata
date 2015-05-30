@@ -2,9 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:SwiftyJSON.xcodeproj">
+      location = "group:Calm.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:Example.xcodeproj">
+      location = "group:Pods/Pods.xcodeproj">
    </FileRef>
 </Workspace>
