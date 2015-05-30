@@ -51,14 +51,19 @@ class InterfaceController: WKInterfaceController {
         timer?.invalidate()
 //        timer = nil
     }
-    
+
     func fetchData() {
         let url = NSURL(string: "http://\(Constants.SERVER_IP)/stress")
         
         let task = NSURLSession.sharedSession().dataTaskWithURL(url!) {(data, response, error) in
             let json = JSON(data: data)
-            let stress: String = String(format:"%.1f", json["stress"].doubleValue)
-//            self.test.setText(stress)
+            let stress = json["stress"].doubleValue;
+            let stressString: String = String(format:"%.1f", stress)
+
+            if(stress > 0.8) {
+                //Do notification
+            }
+            //self.test.setText(stress)
         }
         
         task.resume()
