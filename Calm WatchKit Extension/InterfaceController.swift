@@ -61,12 +61,22 @@ class InterfaceController: WKInterfaceController {
             let stressString: String = String(format:"%.1f", stress)
 
             if(stress > 0.8) {
-                //Do notification
+                sendNotification(nil)
             }
             //self.test.setText(stress)
         }
         
         task.resume()
+    }
+
+    @IBAction func sendNotification(sender: UIButton) {
+        var localNotification = UILocalNotification()
+        localNotification.fireDate = NSDate(timeIntervalSinceNow: 0)
+        localNotification.alertBody = "[Some nice text]"
+        localNotification.timeZone = NSTimeZone.defaultTimeZone()
+        localNotification.applicationIconBadgeNumber = UIApplication.sharedApplication().applicationIconBadgeNumber + 1
+        
+        UIApplication.sharedApplication().scheduleLocalNotification(localNotification)
     }
 
 }
