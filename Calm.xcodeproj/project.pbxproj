@@ -1,0 +1,708 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8FAF77FD1B19D61D00D7FFE5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FAF77FC1B19D61D00D7FFE5 /* AppDelegate.swift */; };
+		8FAF77FF1B19D61D00D7FFE5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FAF77FE1B19D61D00D7FFE5 /* ViewController.swift */; };
+		8FAF78021B19D61D00D7FFE5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FAF78001B19D61D00D7FFE5 /* Main.storyboard */; };
+		8FAF78041B19D61D00D7FFE5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8FAF78031B19D61D00D7FFE5 /* Images.xcassets */; };
+		8FAF78071B19D61D00D7FFE5 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8FAF78051B19D61D00D7FFE5 /* LaunchScreen.xib */; };
+		8FAF78131B19D61E00D7FFE5 /* CalmTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FAF78121B19D61E00D7FFE5 /* CalmTests.swift */; };
+		8FAF78261B19D63200D7FFE5 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FAF78251B19D63200D7FFE5 /* InterfaceController.swift */; };
+		8FAF78281B19D63200D7FFE5 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FAF78271B19D63200D7FFE5 /* NotificationController.swift */; };
+		8FAF782A1B19D63200D7FFE5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8FAF78291B19D63200D7FFE5 /* Images.xcassets */; };
+		8FAF782E1B19D63200D7FFE5 /* Calm WatchKit App.app in Resources */ = {isa = PBXBuildFile; fileRef = 8FAF782D1B19D63200D7FFE5 /* Calm WatchKit App.app */; };
+		8FAF78361B19D63200D7FFE5 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FAF78341B19D63200D7FFE5 /* Interface.storyboard */; };
+		8FAF78381B19D63200D7FFE5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8FAF78371B19D63200D7FFE5 /* Images.xcassets */; };
+		8FAF783B1B19D63200D7FFE5 /* Calm WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 8FAF78201B19D63200D7FFE5 /* Calm WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		8FAF78441B19D65A00D7FFE5 /* HealthKitHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FAF78431B19D65A00D7FFE5 /* HealthKitHelper.swift */; };
+		8FAF78461B19D6C000D7FFE5 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FAF78451B19D6C000D7FFE5 /* HealthKit.framework */; };
+		8FAF78491B19D87000D7FFE5 /* Diff.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FAF78481B19D87000D7FFE5 /* Diff.swift */; };
+		8FAF784B1B19D8B400D7FFE5 /* MovingAverage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FAF784A1B19D8B400D7FFE5 /* MovingAverage.swift */; };
+		8FAF784D1B19D8C300D7FFE5 /* StressDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FAF784C1B19D8C300D7FFE5 /* StressDetector.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8FAF780D1B19D61D00D7FFE5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8FAF77EF1B19D61D00D7FFE5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8FAF77F61B19D61D00D7FFE5;
+			remoteInfo = Calm;
+		};
+		8FAF782F1B19D63200D7FFE5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8FAF77EF1B19D61D00D7FFE5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8FAF782C1B19D63200D7FFE5;
+			remoteInfo = "Calm WatchKit App";
+		};
+		8FAF78391B19D63200D7FFE5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8FAF77EF1B19D61D00D7FFE5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8FAF781F1B19D63200D7FFE5;
+			remoteInfo = "Calm WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8FAF78421B19D63200D7FFE5 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				8FAF783B1B19D63200D7FFE5 /* Calm WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		8FAF77F71B19D61D00D7FFE5 /* Calm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Calm.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8FAF77FB1B19D61D00D7FFE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8FAF77FC1B19D61D00D7FFE5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8FAF77FE1B19D61D00D7FFE5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8FAF78011B19D61D00D7FFE5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8FAF78031B19D61D00D7FFE5 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		8FAF78061B19D61D00D7FFE5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		8FAF780C1B19D61D00D7FFE5 /* CalmTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CalmTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8FAF78111B19D61D00D7FFE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8FAF78121B19D61E00D7FFE5 /* CalmTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalmTests.swift; sourceTree = "<group>"; };
+		8FAF78201B19D63200D7FFE5 /* Calm WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Calm WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8FAF78231B19D63200D7FFE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8FAF78241B19D63200D7FFE5 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		8FAF78251B19D63200D7FFE5 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		8FAF78271B19D63200D7FFE5 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		8FAF78291B19D63200D7FFE5 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		8FAF782D1B19D63200D7FFE5 /* Calm WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Calm WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8FAF78331B19D63200D7FFE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8FAF78351B19D63200D7FFE5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		8FAF78371B19D63200D7FFE5 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		8FAF78431B19D65A00D7FFE5 /* HealthKitHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HealthKitHelper.swift; sourceTree = "<group>"; };
+		8FAF78451B19D6C000D7FFE5 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		8FAF78471B19D6C000D7FFE5 /* Calm.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Calm.entitlements; sourceTree = "<group>"; };
+		8FAF78481B19D87000D7FFE5 /* Diff.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Diff.swift; sourceTree = "<group>"; };
+		8FAF784A1B19D8B400D7FFE5 /* MovingAverage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovingAverage.swift; sourceTree = "<group>"; };
+		8FAF784C1B19D8C300D7FFE5 /* StressDetector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StressDetector.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8FAF77F41B19D61D00D7FFE5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8FAF78461B19D6C000D7FFE5 /* HealthKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8FAF78091B19D61D00D7FFE5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8FAF781D1B19D63200D7FFE5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8FAF77EE1B19D61D00D7FFE5 = {
+			isa = PBXGroup;
+			children = (
+				8FAF78451B19D6C000D7FFE5 /* HealthKit.framework */,
+				8FAF77F91B19D61D00D7FFE5 /* Calm */,
+				8FAF780F1B19D61D00D7FFE5 /* CalmTests */,
+				8FAF78211B19D63200D7FFE5 /* Calm WatchKit Extension */,
+				8FAF78311B19D63200D7FFE5 /* Calm WatchKit App */,
+				8FAF77F81B19D61D00D7FFE5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8FAF77F81B19D61D00D7FFE5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8FAF77F71B19D61D00D7FFE5 /* Calm.app */,
+				8FAF780C1B19D61D00D7FFE5 /* CalmTests.xctest */,
+				8FAF78201B19D63200D7FFE5 /* Calm WatchKit Extension.appex */,
+				8FAF782D1B19D63200D7FFE5 /* Calm WatchKit App.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8FAF77F91B19D61D00D7FFE5 /* Calm */ = {
+			isa = PBXGroup;
+			children = (
+				8FAF78471B19D6C000D7FFE5 /* Calm.entitlements */,
+				8FAF77FC1B19D61D00D7FFE5 /* AppDelegate.swift */,
+				8FAF78431B19D65A00D7FFE5 /* HealthKitHelper.swift */,
+				8FAF78481B19D87000D7FFE5 /* Diff.swift */,
+				8FAF784A1B19D8B400D7FFE5 /* MovingAverage.swift */,
+				8FAF784C1B19D8C300D7FFE5 /* StressDetector.swift */,
+				8FAF77FE1B19D61D00D7FFE5 /* ViewController.swift */,
+				8FAF78001B19D61D00D7FFE5 /* Main.storyboard */,
+				8FAF78031B19D61D00D7FFE5 /* Images.xcassets */,
+				8FAF78051B19D61D00D7FFE5 /* LaunchScreen.xib */,
+				8FAF77FA1B19D61D00D7FFE5 /* Supporting Files */,
+			);
+			path = Calm;
+			sourceTree = "<group>";
+		};
+		8FAF77FA1B19D61D00D7FFE5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8FAF77FB1B19D61D00D7FFE5 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8FAF780F1B19D61D00D7FFE5 /* CalmTests */ = {
+			isa = PBXGroup;
+			children = (
+				8FAF78121B19D61E00D7FFE5 /* CalmTests.swift */,
+				8FAF78101B19D61D00D7FFE5 /* Supporting Files */,
+			);
+			path = CalmTests;
+			sourceTree = "<group>";
+		};
+		8FAF78101B19D61D00D7FFE5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8FAF78111B19D61D00D7FFE5 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8FAF78211B19D63200D7FFE5 /* Calm WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				8FAF78251B19D63200D7FFE5 /* InterfaceController.swift */,
+				8FAF78271B19D63200D7FFE5 /* NotificationController.swift */,
+				8FAF78291B19D63200D7FFE5 /* Images.xcassets */,
+				8FAF78221B19D63200D7FFE5 /* Supporting Files */,
+			);
+			path = "Calm WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		8FAF78221B19D63200D7FFE5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8FAF78231B19D63200D7FFE5 /* Info.plist */,
+				8FAF78241B19D63200D7FFE5 /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8FAF78311B19D63200D7FFE5 /* Calm WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				8FAF78341B19D63200D7FFE5 /* Interface.storyboard */,
+				8FAF78371B19D63200D7FFE5 /* Images.xcassets */,
+				8FAF78321B19D63200D7FFE5 /* Supporting Files */,
+			);
+			path = "Calm WatchKit App";
+			sourceTree = "<group>";
+		};
+		8FAF78321B19D63200D7FFE5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8FAF78331B19D63200D7FFE5 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8FAF77F61B19D61D00D7FFE5 /* Calm */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8FAF78161B19D61E00D7FFE5 /* Build configuration list for PBXNativeTarget "Calm" */;
+			buildPhases = (
+				8FAF77F31B19D61D00D7FFE5 /* Sources */,
+				8FAF77F41B19D61D00D7FFE5 /* Frameworks */,
+				8FAF77F51B19D61D00D7FFE5 /* Resources */,
+				8FAF78421B19D63200D7FFE5 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8FAF783A1B19D63200D7FFE5 /* PBXTargetDependency */,
+			);
+			name = Calm;
+			productName = Calm;
+			productReference = 8FAF77F71B19D61D00D7FFE5 /* Calm.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8FAF780B1B19D61D00D7FFE5 /* CalmTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8FAF78191B19D61E00D7FFE5 /* Build configuration list for PBXNativeTarget "CalmTests" */;
+			buildPhases = (
+				8FAF78081B19D61D00D7FFE5 /* Sources */,
+				8FAF78091B19D61D00D7FFE5 /* Frameworks */,
+				8FAF780A1B19D61D00D7FFE5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8FAF780E1B19D61D00D7FFE5 /* PBXTargetDependency */,
+			);
+			name = CalmTests;
+			productName = CalmTests;
+			productReference = 8FAF780C1B19D61D00D7FFE5 /* CalmTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8FAF781F1B19D63200D7FFE5 /* Calm WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8FAF783F1B19D63200D7FFE5 /* Build configuration list for PBXNativeTarget "Calm WatchKit Extension" */;
+			buildPhases = (
+				8FAF781C1B19D63200D7FFE5 /* Sources */,
+				8FAF781D1B19D63200D7FFE5 /* Frameworks */,
+				8FAF781E1B19D63200D7FFE5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8FAF78301B19D63200D7FFE5 /* PBXTargetDependency */,
+			);
+			name = "Calm WatchKit Extension";
+			productName = "Calm WatchKit Extension";
+			productReference = 8FAF78201B19D63200D7FFE5 /* Calm WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit-extension";
+		};
+		8FAF782C1B19D63200D7FFE5 /* Calm WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8FAF783C1B19D63200D7FFE5 /* Build configuration list for PBXNativeTarget "Calm WatchKit App" */;
+			buildPhases = (
+				8FAF782B1B19D63200D7FFE5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Calm WatchKit App";
+			productName = "Calm WatchKit App";
+			productReference = 8FAF782D1B19D63200D7FFE5 /* Calm WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8FAF77EF1B19D61D00D7FFE5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = Optonaut;
+				TargetAttributes = {
+					8FAF77F61B19D61D00D7FFE5 = {
+						CreatedOnToolsVersion = 6.3.2;
+						DevelopmentTeam = 5X3WW56JVE;
+						SystemCapabilities = {
+							com.apple.HealthKit = {
+								enabled = 1;
+							};
+						};
+					};
+					8FAF780B1B19D61D00D7FFE5 = {
+						CreatedOnToolsVersion = 6.3.2;
+						TestTargetID = 8FAF77F61B19D61D00D7FFE5;
+					};
+					8FAF781F1B19D63200D7FFE5 = {
+						CreatedOnToolsVersion = 6.3.2;
+					};
+					8FAF782C1B19D63200D7FFE5 = {
+						CreatedOnToolsVersion = 6.3.2;
+					};
+				};
+			};
+			buildConfigurationList = 8FAF77F21B19D61D00D7FFE5 /* Build configuration list for PBXProject "Calm" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8FAF77EE1B19D61D00D7FFE5;
+			productRefGroup = 8FAF77F81B19D61D00D7FFE5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8FAF77F61B19D61D00D7FFE5 /* Calm */,
+				8FAF780B1B19D61D00D7FFE5 /* CalmTests */,
+				8FAF781F1B19D63200D7FFE5 /* Calm WatchKit Extension */,
+				8FAF782C1B19D63200D7FFE5 /* Calm WatchKit App */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8FAF77F51B19D61D00D7FFE5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8FAF78021B19D61D00D7FFE5 /* Main.storyboard in Resources */,
+				8FAF78071B19D61D00D7FFE5 /* LaunchScreen.xib in Resources */,
+				8FAF78041B19D61D00D7FFE5 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8FAF780A1B19D61D00D7FFE5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8FAF781E1B19D63200D7FFE5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8FAF782A1B19D63200D7FFE5 /* Images.xcassets in Resources */,
+				8FAF782E1B19D63200D7FFE5 /* Calm WatchKit App.app in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8FAF782B1B19D63200D7FFE5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8FAF78361B19D63200D7FFE5 /* Interface.storyboard in Resources */,
+				8FAF78381B19D63200D7FFE5 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8FAF77F31B19D61D00D7FFE5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8FAF784B1B19D8B400D7FFE5 /* MovingAverage.swift in Sources */,
+				8FAF77FF1B19D61D00D7FFE5 /* ViewController.swift in Sources */,
+				8FAF78441B19D65A00D7FFE5 /* HealthKitHelper.swift in Sources */,
+				8FAF78491B19D87000D7FFE5 /* Diff.swift in Sources */,
+				8FAF77FD1B19D61D00D7FFE5 /* AppDelegate.swift in Sources */,
+				8FAF784D1B19D8C300D7FFE5 /* StressDetector.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8FAF78081B19D61D00D7FFE5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8FAF78131B19D61E00D7FFE5 /* CalmTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8FAF781C1B19D63200D7FFE5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8FAF78281B19D63200D7FFE5 /* NotificationController.swift in Sources */,
+				8FAF78261B19D63200D7FFE5 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8FAF780E1B19D61D00D7FFE5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8FAF77F61B19D61D00D7FFE5 /* Calm */;
+			targetProxy = 8FAF780D1B19D61D00D7FFE5 /* PBXContainerItemProxy */;
+		};
+		8FAF78301B19D63200D7FFE5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8FAF782C1B19D63200D7FFE5 /* Calm WatchKit App */;
+			targetProxy = 8FAF782F1B19D63200D7FFE5 /* PBXContainerItemProxy */;
+		};
+		8FAF783A1B19D63200D7FFE5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8FAF781F1B19D63200D7FFE5 /* Calm WatchKit Extension */;
+			targetProxy = 8FAF78391B19D63200D7FFE5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8FAF78001B19D61D00D7FFE5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8FAF78011B19D61D00D7FFE5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8FAF78051B19D61D00D7FFE5 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8FAF78061B19D61D00D7FFE5 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		8FAF78341B19D63200D7FFE5 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8FAF78351B19D63200D7FFE5 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8FAF78141B19D61E00D7FFE5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8FAF78151B19D61E00D7FFE5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8FAF78171B19D61E00D7FFE5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Calm/Calm.entitlements;
+				INFOPLIST_FILE = Calm/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		8FAF78181B19D61E00D7FFE5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Calm/Calm.entitlements;
+				INFOPLIST_FILE = Calm/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		8FAF781A1B19D61E00D7FFE5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = CalmTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Calm.app/Calm";
+			};
+			name = Debug;
+		};
+		8FAF781B1B19D61E00D7FFE5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = CalmTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Calm.app/Calm";
+			};
+			name = Release;
+		};
+		8FAF783D1B19D63200D7FFE5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IBSC_MODULE = Calm_WatchKit_Extension;
+				INFOPLIST_FILE = "Calm WatchKit App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Debug;
+		};
+		8FAF783E1B19D63200D7FFE5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				IBSC_MODULE = Calm_WatchKit_Extension;
+				INFOPLIST_FILE = "Calm WatchKit App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Release;
+		};
+		8FAF78401B19D63200D7FFE5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Calm WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		8FAF78411B19D63200D7FFE5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Calm WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8FAF77F21B19D61D00D7FFE5 /* Build configuration list for PBXProject "Calm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8FAF78141B19D61E00D7FFE5 /* Debug */,
+				8FAF78151B19D61E00D7FFE5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8FAF78161B19D61E00D7FFE5 /* Build configuration list for PBXNativeTarget "Calm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8FAF78171B19D61E00D7FFE5 /* Debug */,
+				8FAF78181B19D61E00D7FFE5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		8FAF78191B19D61E00D7FFE5 /* Build configuration list for PBXNativeTarget "CalmTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8FAF781A1B19D61E00D7FFE5 /* Debug */,
+				8FAF781B1B19D61E00D7FFE5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		8FAF783C1B19D63200D7FFE5 /* Build configuration list for PBXNativeTarget "Calm WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8FAF783D1B19D63200D7FFE5 /* Debug */,
+				8FAF783E1B19D63200D7FFE5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		8FAF783F1B19D63200D7FFE5 /* Build configuration list for PBXNativeTarget "Calm WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8FAF78401B19D63200D7FFE5 /* Debug */,
+				8FAF78411B19D63200D7FFE5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8FAF77EF1B19D61D00D7FFE5 /* Project object */;
+}
