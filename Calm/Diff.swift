@@ -1,16 +1,13 @@
-//
-//  Diff.swift
-//  Calm
-//
-//  Created by Johannes Schickling on 5/30/15.
-//  Copyright (c) 2015 Optonaut. All rights reserved.
-//
-
 
 import Foundation
 
 class Diff : NSObject
 {
-    
-}
+	var state: Double = 0
 
+	func push(x: Double) -> Double {
+		var dx = state - x;
+		state = x;
+		return dx;
+	}
+}
