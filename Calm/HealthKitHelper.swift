@@ -78,13 +78,27 @@ class HealthKit : NSObject
             let formatter = NSDateFormatter()
             formatter.dateFormat = "hh:mm:ss"
             
-            for result in results
-            {
+            for result in results {
+                
                 print(identifier)
                 print(", ")
                 print(formatter.stringFromDate(result.startDate))
                 print(", ")
                 println(result.quantity)
+                
+                let unit = HKUnit.countUnit().unitDividedByUnit(HKUnit.secondUnit())
+                let quantity = result.quantity!.doubleValueForUnit(unit)
+                let params = ["s": quantity] as Dictionary<String, Double>
+                let url = NSURL(string: "http://\(Constants.SERVER_IP)/heart")
+                let request = NSMutableURLRequest(URL: url!)
+                
+                request.HTTPMethod = "POST"
+                request.HTTPBody = NSJSONSerialization.dataWithJSONObject(params, options: nil, error: nil)
+                request.addValue("application/json", forHTTPHeaderField: "Content-Type")
+                
+                let task = NSURLSession.sharedSession().dataTaskWithRequest(request, completionHandler: nil)
+                
+                task.resume()
             }
         }
         

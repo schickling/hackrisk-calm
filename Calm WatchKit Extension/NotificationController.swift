@@ -15,6 +15,7 @@ class NotificationController: WKUserNotificationInterfaceController {
     override init() {
         // Initialize variables here.
         super.init()
+        println("init notification")
         
         // Configure interface objects here.
     }
