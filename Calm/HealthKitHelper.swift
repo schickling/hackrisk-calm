@@ -11,6 +11,7 @@ import HealthKit
 
 class HealthKit : NSObject
 {
+    let motion =  CMMotionManager()
     let storage = HKHealthStore()
     
     override init()
@@ -88,25 +89,51 @@ class HealthKit : NSObject
                 
                 let unit = HKUnit.countUnit().unitDividedByUnit(HKUnit.secondUnit())
                 let quantity = result.quantity!.doubleValueForUnit(unit)
-                let params = ["s": quantity] as Dictionary<String, Double>
+                let params = ["s": quantity, "t": 0] as Dictionary<String, Double>
                 let url = NSURL(string: "http://\(Constants.SERVER_IP)/heart")
-                let request = NSMutableURLRequest(URL: url!)
-                
-                request.HTTPMethod = "POST"
-                request.HTTPBody = NSJSONSerialization.dataWithJSONObject(params, options: nil, error: nil)
-                request.addValue("application/json", forHTTPHeaderField: "Content-Type")
-                
-                let task = NSURLSession.sharedSession().dataTaskWithRequest(request, completionHandler: nil)
-                
-                task.resume()
+
+                executePostRequest(url, params);
             }
         }
         
         storage.executeQuery(query)
     }
+
+    func executePostRequest(url: NSURL, params: Dictionary<String, Double>) {
+        let request = NSMutableURLRequest(URL: url!)
+        
+        request.HTTPMethod = "POST"
+        request.HTTPBody = NSJSONSerialization.dataWithJSONObject(params, options: nil, error: nil)
+        request.addValue("application/json", forHTTPHeaderField: "Content-Type")
+        
+        let task = NSURLSession.sharedSession().dataTaskWithRequest(request, completionHandler: nil)
+        
+        task.resume()
+    }
+
+    func uploadAccData(vec: CMAcceleration) {
+
+        let params = ["x": vec.x, "y": vec.y, "z": vec.z, "t": 0] as Dictionary<String, Double>
+        let url = NSURL(string: "http://\(Constants.SERVER_IP)/acc")
+        executePostRequest(url, params);
+    }
     
     func startPollData() {
         var timer = NSTimer.scheduledTimerWithTimeInterval(5.0, target: self, selector: Selector("fetchAll"), userInfo: nil, repeats: true)
+
+        motion.deviceMotionUpdateInterval = 0.1
+        if motion.accelerometerAvailable == true {
+            motion.startAccelerometerUpdatesToQueue(NSOperationQueue.currentQueue(), withHandler:{
+                data, error in
+                if(error != nil) {
+                    println("Error fetching accellerometer data")
+                    println(error.localizedDescription)
+                    abort()
+                }
+                self.uploadAccData(data.acceleration)
+            })
+        }
+
     }
     
 }
