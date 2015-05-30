@@ -60,8 +60,8 @@ class InterfaceController: WKInterfaceController {
             let stress = json["stress"].doubleValue;
             let stressString: String = String(format:"%.1f", stress)
 
-            if(stress > 0.8) {
-                sendNotification(nil)
+            if stress > 0.8 {
+//                self.sendNotification(nil)
             }
             //self.test.setText(stress)
         }
@@ -69,14 +69,14 @@ class InterfaceController: WKInterfaceController {
         task.resume()
     }
 
-    @IBAction func sendNotification(sender: UIButton) {
-        var localNotification = UILocalNotification()
-        localNotification.fireDate = NSDate(timeIntervalSinceNow: 0)
-        localNotification.alertBody = "[Some nice text]"
-        localNotification.timeZone = NSTimeZone.defaultTimeZone()
-        localNotification.applicationIconBadgeNumber = UIApplication.sharedApplication().applicationIconBadgeNumber + 1
-        
-        UIApplication.sharedApplication().scheduleLocalNotification(localNotification)
-    }
+//    @IBAction func sendNotification(sender: UIButton) {
+//        var localNotification = UILocalNotification()
+//        localNotification.fireDate = NSDate(timeIntervalSinceNow: 0)
+//        localNotification.alertBody = "[Some nice text]"
+//        localNotification.timeZone = NSTimeZone.defaultTimeZone()
+//        localNotification.applicationIconBadgeNumber = UIApplication.sharedApplication().applicationIconBadgeNumber + 1
+//        
+//        UIApplication.sharedApplication().scheduleLocalNotification(localNotification)
+//    }
 
 }

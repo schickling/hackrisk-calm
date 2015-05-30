@@ -18,7 +18,6 @@ class ViewController: UIViewController {
     
     override func viewDidAppear(animated: Bool)
     {
-        //        HealthKit().observeHeartrate()
         HealthKit().startPollData()
     }
     
